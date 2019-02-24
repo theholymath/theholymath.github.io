@@ -5,3 +5,15 @@
 {% include css/screen.css %}
 {% include css/layout.css %}
 {% include css/syntax.css %}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  /*border-collapse: collapse;*/
+}
+th, td {
+  border: 1px solid black;
+  overflow: hidden;
+  /*text-overflow: ellipsis;*/
+}
