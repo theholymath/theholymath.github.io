@@ -1,0 +1,21 @@
+<nav>
+  <h1>Hi.</h1>
+  <a href="/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+    <img src="/art-deco-chevron-1.jpg" height="142" width="142" id="logo" alt="Blog logo"/>
+    {% endif %}
+  </a>
+  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <div id="bio">
+    <p>Lifelong mathematics evangelist. I write about what I learn here.</p>
+    <p>
+      I code mostly in <code>Python </code> and ship code for
+      <a href="https://www.slalom.com/solutions/slalom-build" target="_blank">Slalom build</a>
+    </p>
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+</nav>
